@@ -1,0 +1,50 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.container{
+  display:flex;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  gap:0; /* gap은 JS가 만들거라 0 */
+  transition:transform 0.4s ease;
+}
+
+.box{
+  height:100px;
+  flex-shrink:0;
+}
+
+.one{ width:50px; background:#f2f2f2; }
+.two{ width:400px; background:#d9d9d9; }
+.three{ width:300px; background:#bfbfbf; }
+.four{ width:200px; background:#a6a6a6; }
+.five{ width:150px; background:#8c8c8c; }
+.six{ width:50px; background:#737373; }
+
+.level{
+  position:relative;
+}
+
+.inner-box{
+  width:40px;
+  height:20px;
+  background:#F5FF6B; /* 연노랑 형광 */
+  position:absolute;
+  bottom:10px;
+  left:50%;
+  transform:translateX(-50%);
+}
+
+}
